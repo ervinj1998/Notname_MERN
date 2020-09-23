@@ -15,3 +15,6 @@ const server = http.createServer((req, res)=>{
 const total = helpers.sum(10, 200)  //declaramos que lso valores de la funcion suma tendra estos dos valores.
 
 console.log("EL total es: ",total);  
+
+
+/* test connectivity of github and use ms studio git push and git pull and not the terminal of your computer */
