@@ -4,7 +4,7 @@ const http= require('http');
 
 
 const server = http.createServer((req, res)=>{
-    res.end("Hola mundo desde el server.");
+    res.end("Hola mundo desde el server!!!!!.");
 });
     server.listen(3000);
 
@@ -14,4 +14,4 @@ const server = http.createServer((req, res)=>{
  */
 const total = helpers.sum(10, 200)  //declaramos que lso valores de la funcion suma tendra estos dos valores.
 
-console.log("EL total es: ",total);  
+console.log("EL total es: ",total);  //usamos esto para probar en consola 
