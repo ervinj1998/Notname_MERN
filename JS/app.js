@@ -1,17 +1,27 @@
-const helpers = require('./helpers'); //importa,mos la funcion mediante la constante helpers, y ponemos require y le damos la ubcacion donde tenemos la funcion.
+const express = require('express')
+const app= express();
 
-const http= require('http');
+app.get('/',(req, res) => {
+    res.end("Hey que paso!!!")
+})
+
+app.listen(3000);
+
+// const helpers = require('./helpers'); //importa,mos la funcion mediante la constante helpers, y ponemos require y le damos la ubcacion donde tenemos la funcion.
+
+// // const http= require('http');
 
 
-const server = http.createServer((req, res)=>{
-    res.end("Hola mundo desde el server!!!!!.");
-});
-    server.listen(3001);
+// // const server = http.createServer((req, res)=>{
+// //     res.end("Hola mundo desde el server!!!!!.");
+// // });
 
-/*  function sum(a, b) {
-    return a+b;   //Funcion de suma que devuelve una suma.
-}
- */
-const total = helpers.sum(10, 200)  //declaramos que lso valores de la funcion suma tendra estos dos valores.
+// //     server.listen(3001);
 
-console.log("EL total es: ",total);  //usamos esto para probar en consola 
+// /*  function sum(a, b) {
+//     return a+b;   //Funcion de suma que devuelve una suma.
+// }
+//  */
+// const total = helpers.sum(10, 200)  //declaramos que lso valores de la funcion suma tendra estos dos valores.
+
+// console.log("EL total es: ",total);  //usamos esto para probar en consola 
