@@ -1,11 +1,13 @@
-const express = require('express')
-const app= express();
+const fs = require('fs');
 
-app.get('/',(req, res) => {
-    res.end("Hey que paso!!!")
-})
+// const express = require('express')
+// const app= express();
 
-app.listen(3000);
+// app.get('/',(req, res) => {
+//     res.end("Hey que paso!!!")
+// })
+
+// app.listen(3000);
 
 // const helpers = require('./helpers'); //importa,mos la funcion mediante la constante helpers, y ponemos require y le damos la ubcacion donde tenemos la funcion.
 
