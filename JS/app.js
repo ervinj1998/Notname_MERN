@@ -1,5 +1,7 @@
 const fs = require('fs');
-const fileName = "target.txt"
+const fileName = "target.txt";
+
+cosnt data = fs.readFileSync(fileName)
 
 fs.readFile(fileName, (err, data) => {
 if(err){
