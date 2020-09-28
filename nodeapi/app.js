@@ -8,8 +8,11 @@ const {
     getPosts
 } = require("./routes/post");
 
-//middelware
+const myOwnMiddleware = () => {console.log('middleware applied!!!')}
+
+//middelware.
 app.use(morgan("dev"));
+app.use(myOwnMiddleware);
 
 app.get("/", getPosts);
 
