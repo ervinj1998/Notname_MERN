@@ -8,6 +8,9 @@ const {
     getPosts
 } = require("./routes/post");
 
+//middelware
+app.use(morgan("dev"));
+
 app.get("/", getPosts);
 
 const port = 8081;
