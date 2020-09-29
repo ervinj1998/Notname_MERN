@@ -4,17 +4,12 @@ const morgan = require('morgan');
 
 // bring in routes
 
-const {
-    getPosts
-} = require("./routes/post");
+const postRoutes = require("./routes/post");
 
-const myOwnMiddleware = () => {console.log('middleware applied!!!')}
 
 //middelware.
 app.use(morgan("dev"));
-app.use(myOwnMiddleware);
-
-app.get("/", getPosts);
+app.use("/", postRoutes); //usando la constante postRoutes
 
 const port = 8081;
 app.listen(port, () => {
