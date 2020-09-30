@@ -4,5 +4,5 @@ exports.getPosts = (req, res) => {
         ]
 
     });
-
+ 
 };
